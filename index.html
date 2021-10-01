@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CRS Calculator Tool</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  </head>
+
+  <body
+    class="
+      no-header-page
+      wsite-page-crs-calculator-tool-express-entry
+      full-width-body-off
+      header-overlay-on
+      alt-nav-off
+      wsite-theme-light
+    "
+  >
+    <div class="wrapper">
+      <div class="main-wrap">
+        <div id="wsite-content" class="wsite-elements wsite-not-footer">
+          <div class="wsite-section-wrap">
+            <div
+              class="wsite-section wsite-body-section wsite-background-1333"
+              style="height: auto; vertical-align: middle"
+            >
+              <div class="wsite-section-content">
+                <div class="container">
+                  <div class="wsite-section-elements">
+                    <div class="wsite-spacer" style="height: 22px"></div>
+
+                    <h2 class="wsite-content-title" style="text-align: center">
+                      <span>CRS Calculator Tool</span>
+                    </h2>
+                    <hr />
+
+                    <div id="222313820337075586">
+                      <div>
+                        <style type="text/css">
+                          #element-e442c458-3941-4749-842b-abfc94c57f76
+                            .callout-box-wrapper {
+                            word-wrap: break-word;
+                          }
+
+                          #element-e442c458-3941-4749-842b-abfc94c57f76
+                            .callout-box--standard {
+                            border: 4px solid #fff0f0;
+                            background: #ffffff;
+                            padding: 20px 20px;
+                          }
+
+                          #element-e442c458-3941-4749-842b-abfc94c57f76
+                            .callout-box--material {
+                            background: #ffffff;
+                            padding: 20px 20px;
+                            margin: 0 20%;
+                          }
+
+                          #element-e442c458-3941-4749-842b-abfc94c57f76
+                            .callout-base {
+                            border: 4px solid #fff0f0;
+                            background: #ffffff;
+                            padding: 20px 20px;
+                          }
+
+                          #element-e442c458-3941-4749-842b-abfc94c57f76
+                            .material {
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                          }
+                        </style>
+                        <div
+                          id="element-e442c458-3941-4749-842b-abfc94c57f76"
+                          data-platform-element-id="694046499467037623-1.2.6"
+                          class="platform-element-contents"
+                        >
+                          <div class="callout-box-wrapper">
+                            <div class="callout-box--material">
+                              <div class="element-content">
+                                <div style="width: auto">
+                                  <div></div>
+                                  <div>
+                                    <div
+                                      id="756821254799756586"
+                                      style="width: 100%; overflow-y: hidden"
+                                      class="wcustomhtml"
+                                    >
+                                      <style>
+                                        .crs_calculator_tool a {
+                                          text-decoration: none !important;
+                                          color: #000;
+                                        }
+
+                                        .crs_calculator_tool a:hover {
+                                          text-decoration: none !important;
+                                          box-shadow: none !important;
+                                          background-color: #fff0f0 !important;
+                                        }
+
+                                        .crs_calculator_tool .tool-ensemble {
+                                          margin-bottom: 15px;
+                                        }
+
+                                        .crs_calculator_tool label.questionCRS {
+                                          color: #000000;
+                                          font-size: 16px;
+                                          line-height: 1.5;
+                                          font-weight: 700;
+                                          display: inline-block;
+                                          max-width: 100%;
+                                          margin-bottom: 10px;
+                                          margin-top: 10px;
+                                        }
+
+                                        .crs_calculator_tool div.questionCRS2 {
+                                          color: #000000;
+                                          font-size: 16px;
+                                          line-height: 1.5;
+                                          font-weight: 700;
+                                          max-width: 100%;
+                                          margin-bottom: 10px;
+                                          margin-top: 10px;
+                                        }
+
+                                        .crs_calculator_tool ul {
+                                          margin: 0 0 20px;
+                                          padding-left: 20px;
+                                          font-size: 15px;
+                                          font-weight: 400;
+                                        }
+
+                                        .crs_calculator_tool ul li {
+                                          left: 10px no-repeat;
+                                          padding-left: 15px;
+                                          font-size: 15px;
+                                        }
+
+                                        .crs_calculator_tool div.prgrph {
+                                          color: #000000;
+                                          font-size: 15px;
+                                          line-height: 1.5;
+                                          font-weight: 400;
+                                          max-width: 100%;
+                                          margin-bottom: 10px;
+                                          margin-top: 10px;
+                                        }
+
+                                        .crs_calculator_tool div.title {
+                                          color: #000000;
+                                          font-size: 16px;
+                                          line-height: 1.5;
+                                          font-weight: 700;
+                                          max-width: 100%;
+                                          margin-bottom: 10px;
+                                          margin-top: 15px;
+                                        }
+
+                                        .crs_calculator_tool div.error {
+                                          color: #000000;
+                                          font-size: 15px;
+                                          line-height: 1.5;
+                                          font-weight: 400;
+                                          max-width: 100%;
+                                          margin-bottom: 20px;
+                                        }
+
+                                        .crs_calculator_tool
+                                          select.tool-choose {
+                                          display: block;
+                                          height: 34px;
+                                          padding: 6px 12px;
+                                          font-size: 15px;
+                                          line-height: 1.42857143;
+                                          color: #555;
+                                          background-color: #fff;
+                                          background-image: none;
+                                          border: 1px solid #ccc;
+                                          border-radius: 4px;
+                                          -webkit-box-shadow: inset 0 1px 1px
+                                            rgba(0, 0, 0, 0.075);
+                                          box-shadow: inset 0 1px 1px
+                                            rgba(0, 0, 0, 0.075);
+                                          -webkit-transition: border-color
+                                              ease-in-out 0.15s,
+                                            -webkit-box-shadow ease-in-out 0.15s;
+                                          -o-transition: border-color
+                                              ease-in-out 0.15s,
+                                            box-shadow ease-in-out 0.15s;
+                                          transition: border-color ease-in-out
+                                              0.15s,
+                                            box-shadow ease-in-out 0.15s;
+                                          max-width: 100%;
+                                          width: 100%;
+                                          margin-bottom: 10px;
+                                        }
+
+                                        .crs_calculator_tool
+                                          .button-dflt.disabled {
+                                          background-color: #fff;
+                                          border-color: #a1a1a1;
+                                          cursor: not-allowed;
+                                          pointer-events: none;
+                                          opacity: 0.65;
+                                          filter: alpha(opacity=65);
+                                          -webkit-box-shadow: none;
+                                          box-shadow: none;
+                                        }
+
+                                        .crs_calculator_tool .btn.button-dflt {
+                                          display: inline-block;
+                                          margin-bottom: 0;
+                                          font-weight: 400;
+                                          text-align: center;
+                                          vertical-align: middle;
+                                          -ms-touch-action: manipulation;
+                                          touch-action: manipulation;
+                                          cursor: pointer;
+                                          background-image: none;
+                                          border: 1px solid #a1a1a1;
+                                          padding: 6px 12px;
+                                          font-size: 16px;
+                                          font-weight: bold;
+                                          line-height: 1.4375;
+                                          border-radius: 4px;
+                                          -webkit-user-select: none;
+                                          -moz-user-select: none;
+                                          -ms-user-select: none;
+                                          user-select: none;
+                                          color: #000000;
+                                          background-color: #fff;
+                                        }
+
+                                        .crs_calculator_tool .not-eligible {
+                                          color: #000000;
+                                          background-color: #fff0f0;
+                                          border-color: #cd3b27;
+                                          border-style: solid;
+                                          border-width: thin;
+                                          border-radius: 4px;
+                                          margin-top: 20px;
+                                          padding-top: 20px;
+                                          padding-left: 20px;
+                                          padding-right: 20px;
+                                          box-shadow: 1px 1px 7px 1px
+                                            rgba(0, 0, 0, 0.51);
+                                        }
+
+                                        .crs_calculator_tool .alert.rect-final {
+                                          color: #000000;
+                                          border-color: #cd3b27;
+                                          border-style: solid;
+                                          border-width: thin;
+                                          border-radius: 4px;
+                                          padding-top: 20px;
+                                          padding-bottom: 20px;
+                                          padding-left: 20px;
+                                          padding-right: 20px;
+                                        }
+
+                                        .crs_calculator_tool .rect-final hr {
+                                          margin-top: 20px;
+                                          margin-bottom: 20px;
+                                          border: 0;
+                                        }
+
+                                        .crs_calculator_tool div#outcome {
+                                          margin-top: 20px;
+                                          margin-bottom: 20px;
+                                          border-style: solid;
+                                          border-width: thin;
+                                          border-radius: 4px;
+                                        }
+
+                                        .crs_calculator_tool
+                                          div#outcome
+                                          .alert.rect-final {
+                                          background: #fff0f0;
+                                          padding: 15px;
+                                          border: 0 solid transparent;
+                                          border-radius: 0;
+                                        }
+
+                                        .crs_calculator_tool
+                                          div#outcome
+                                          div
+                                          .final2 {
+                                          font-size: 24px;
+                                          padding-bottom: 10px;
+                                          padding-top: 10px;
+                                          font-weight: 700;
+                                          color: #000000;
+                                        }
+
+                                        .crs_calculator_tool
+                                          div#outcome
+                                          div
+                                          .final3 {
+                                          font-size: 17px;
+                                          height: 20px;
+                                          height: auto;
+                                          padding-bottom: 10px;
+                                          font-weight: 600;
+                                          color: #000000;
+                                        }
+
+                                        .crs_calculator_tool
+                                          div#outcome
+                                          div
+                                          .final4 {
+                                          margin-top: 10px;
+                                          font-size: 16px;
+                                          color: #000000;
+                                          font-weight: 500;
+                                        }
+
+                                        .crs_calculator_tool
+                                          div#outcome
+                                          div
+                                          .final5 {
+                                          margin-top: 10px;
+                                          font-size: 16px;
+                                          color: #000000;
+                                          font-weight: 600;
+                                        }
+
+                                        .crs_calculator_tool div#outcome ul li {
+                                          color: #000000;
+                                        }
+
+                                        .hidden_start {
+                                          display: none;
+                                        }
+                                      </style>
+
+                                      <section class="crs_calculator_tool">
+                                        <div class="crs-webform">
+                                          <form id="crs-form" role="form">
+                                            <div
+                                              id="q1-marital-status"
+                                              class="tool-ensemble"
+                                            >
+                                              <label
+                                                for="q1"
+                                                class="questionCRS"
+                                                >1) What is your current
+                                                status?</label
+                                              >
+                                              <select
+                                                id="q1"
+                                                name="q1"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">
+                                                  Annulled Marriage
+                                                </option>
+                                                <option value="B">
+                                                  Common-Law
+                                                </option>
+                                                <option value="C">
+                                                  Divorced/Separated
+                                                </option>
+                                                <option value="D">
+                                                  Legally Separated
+                                                </option>
+                                                <option value="E">
+                                                  Married
+                                                </option>
+                                                <option value="F">
+                                                  Never Married/Single
+                                                </option>
+                                                <option value="G">
+                                                  Widowed
+                                                </option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q2i-spouse-cit"
+                                              class="tool-ensemble"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q2i"
+                                                class="questionCRS"
+                                                >i. Is your spouse/partner a
+                                                permanent resident or Canadian
+                                                citizen?</label
+                                              >
+                                              <select
+                                                id="q2i"
+                                                name="q2i"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">No</option>
+                                                <option value="B">Yes</option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q2ii-spouse-joining"
+                                              class="tool-ensemble"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q2ii"
+                                                class="questionCRS"
+                                                >ii. Is your spouse/partner
+                                                accompanying you to
+                                                Canada?</label
+                                              >
+                                              <select
+                                                id="q2ii"
+                                                name="q2ii"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">No</option>
+                                                <option value="B">Yes</option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q3-age"
+                                              class="tool-ensemble"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q3"
+                                                class="questionCRS"
+                                                >2) What is your age?</label
+                                              >
+
+                                              <select
+                                                id="q3"
+                                                name="q3"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                undefined
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q4-education"
+                                              class="tool-ensemble"
+                                              style="display: none"
+                                            >
+                                              <div class="title">
+                                                <b>3) Level of education</b>
+                                              </div>
+                                              <label
+                                                for="q4"
+                                                class="questionCRS"
+                                                >i. What is your highest
+                                                educational level?</label
+                                              >
+                                              <div class="prgrph">
+                                                The only qualification that you
+                                                can take into account are
+                                                either:
+                                              </div>
+                                              <ul>
+                                                <li>
+                                                  a
+                                                  <strong>Canadian</strong>
+                                                  educational credential, or
+                                                </li>
+                                                <li>
+                                                  an
+                                                  <a href=""
+                                                    >Educational Credential
+                                                    Assessment (ECA)</a
+                                                  >, if your studies were
+                                                  completed outside Canada.
+                                                </li>
+                                              </ul>
+                                              <select
+                                                id="q4"
+                                                name="q4"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                undefined
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q4b-education"
+                                              class="tool-ensemble"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q4b"
+                                                class="questionCRS"
+                                                >ii. Do you have a Canadian
+                                                educational credential?</label
+                                              >
+                                              <div class="prgrph">
+                                                In order for your Canadian
+                                                credential to qualify:
+                                              </div>
+                                              <ul>
+                                                <li>
+                                                  You must have been physically
+                                                  present in Canada and have
+                                                  been enrolled in full-time
+                                                  study for at least eight
+                                                  months.
+                                                </li>
+                                                <li>
+                                                  You must not have studied
+                                                  French or English (as language
+                                                  classes, not studies in French
+                                                  or English) for more than 50%
+                                                  of the program of study.
+                                                </li>
+                                                <li>
+                                                  You must not have received a
+                                                  scholarship or fellowship that
+                                                  requires you to come back home
+                                                  (your country) at the end of
+                                                  your studies.
+                                                </li>
+                                                <li>
+                                                  You must not have studied in a
+                                                  program in which distance
+                                                  learning amounted to more than
+                                                  50% of the program of study.
+                                                </li>
+                                              </ul>
+                                              <select
+                                                id="q4b"
+                                                name="q4b"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A" label="No">
+                                                  No
+                                                </option>
+                                                <option value="B" label="Yes">
+                                                  Yes
+                                                </option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q4c-education"
+                                              class="tool-ensemble"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q4c"
+                                                class="questionCRS"
+                                                >iii. What is the highest level
+                                                of your Canadian
+                                                credential?</label
+                                              >
+                                              <select
+                                                id="q4c"
+                                                name="q4c"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">
+                                                  Secondary (high) school
+                                                  diploma or less
+                                                </option>
+                                                <option value="B">
+                                                  One- or two-year
+                                                  post-secondary credential
+                                                </option>
+                                                <option value="C">
+                                                  Bachelor’s (min. three years),
+                                                  Master’s, Professional (NOC
+                                                  A), or Doctoral (PhD) degree
+                                                </option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q5-ol"
+                                              class="tool-ensemble"
+                                              style="display: none"
+                                            >
+                                              <div class="title">
+                                                <b>4) Language abilities </b>
+                                              </div>
+                                              <div class="prgrph">
+                                                You need
+                                                <a href="">
+                                                  language test results
+                                                </a>
+                                                (less than 2 years old) to prove
+                                                your proficiency in French or
+                                                English.
+                                              </div>
+                                              <div id="q5i-fol">
+                                                <label
+                                                  for="q5i"
+                                                  class="questionCRS"
+                                                  >i. Is your language test
+                                                  report issued less than two
+                                                  years ago?</label
+                                                >
+                                                <select
+                                                  id="q5i"
+                                                  name="q5i"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                  <option value="B">No</option>
+                                                  <option value="A">Yes</option>
+                                                </select>
+                                              </div>
+                                              <div
+                                                id="q5i-a-fol"
+                                                style="display: none"
+                                              >
+                                                <label
+                                                  for="q5i-a"
+                                                  class="questionCRS"
+                                                  >ii. What is the name of the
+                                                  test you took for your first
+                                                  language ability?</label
+                                                >
+                                                <select
+                                                  id="q5i-a"
+                                                  name="q5i-a"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                  <option value="A">
+                                                    CELPIP
+                                                  </option>
+                                                  <option value="B">
+                                                    IELTS
+                                                  </option>
+                                                  <option value="C">
+                                                    TEF Canada
+                                                  </option>
+                                                  <option value="D">
+                                                    TCF Canada
+                                                  </option>
+                                                </select>
+                                              </div>
+                                              <div
+                                                id="q5i-b-fol"
+                                                style="display: none"
+                                              >
+                                                <div class="prgrph">
+                                                  Fill in your test results:
+                                                </div>
+                                                <label
+                                                  for="q5i-b-speaking"
+                                                  class="questionCRS"
+                                                  >Speaking:</label
+                                                >
+                                                <select
+                                                  id="q5i-b-speaking"
+                                                  name="q5i-b-speaking"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q5i-b-listening"
+                                                  class="questionCRS"
+                                                  >Listening:</label
+                                                >
+                                                <select
+                                                  id="q5i-b-listening"
+                                                  name="q5i-b-listening"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q5i-b-reading"
+                                                  class="questionCRS"
+                                                  >Reading:</label
+                                                >
+                                                <select
+                                                  id="q5i-b-reading"
+                                                  name="q5i-b-reading"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q5i-b-writing"
+                                                  class="questionCRS"
+                                                  >Writing:</label
+                                                >
+                                                <select
+                                                  id="q5i-b-writing"
+                                                  name="q5i-b-writing"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                              </div>
+                                              <div
+                                                id="q5ii-sol"
+                                                style="display: none"
+                                              >
+                                                <label
+                                                  for="q5ii"
+                                                  class="questionCRS"
+                                                  >iii. Did you take another
+                                                  test for your second language
+                                                  ability?</label
+                                                >
+                                                <div class="prgrph">
+                                                  If the answer is yes, select
+                                                  which test in the list below
+                                                  (results must also be less
+                                                  than 2 years old); and if no,
+                                                  select N/A.
+                                                </div>
+                                                <select
+                                                  id="q5ii"
+                                                  name="q5ii"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                              </div>
+                                              <div
+                                                id="q5ii-b-sol"
+                                                style="display: none"
+                                              >
+                                                <div class="prgrph">
+                                                  <b
+                                                    >Fill in your test
+                                                    results:</b
+                                                  >
+                                                </div>
+                                                <label
+                                                  for="q5ii-sol-speaking"
+                                                  class="questionCRS"
+                                                  >Speaking:</label
+                                                >
+                                                <select
+                                                  id="q5ii-sol-speaking"
+                                                  name="q5ii-sol-speaking"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q5ii-sol-listening"
+                                                  class="questionCRS"
+                                                  >Listening:</label
+                                                >
+                                                <select
+                                                  id="q5ii-sol-listening"
+                                                  name="q5ii-sol-listening"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q5ii-sol-reading"
+                                                  class="questionCRS"
+                                                  >Reading:</label
+                                                >
+                                                <select
+                                                  id="q5ii-sol-reading"
+                                                  name="q5ii-sol-reading"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q5ii-sol-writing"
+                                                  class="questionCRS"
+                                                  >Writing:</label
+                                                >
+                                                <select
+                                                  id="q5ii-sol-writing"
+                                                  name="q5ii-sol-writing"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div
+                                              id="q6-work-xp"
+                                              class="tool-ensemble"
+                                              style="display: none"
+                                            >
+                                              <div class="title">
+                                                <b>5) Work Experience</b>
+                                              </div>
+                                              <div class="prgrph">
+                                                The work experience must be:
+                                              </div>
+                                              <ul>
+                                                <li>
+                                                  acquired in an occupation
+                                                  under NOC Skill Type/Level 0,
+                                                  A or B,
+                                                </li>
+                                                <li>
+                                                  full-time (or the equivalent
+                                                  in part-time, at least
+                                                  15h/week), and
+                                                </li>
+                                                <li>remunerated.</li>
+                                              </ul>
+                                              <div id="q6i-canada">
+                                                <label
+                                                  for="q6i"
+                                                  class="questionCRS"
+                                                  >i. How many years of Canadian
+                                                  work experience have you
+                                                  accumulated over the past 10
+                                                  years?</label
+                                                >
+                                                <div class="prgrph">
+                                                  If you are not sure about the
+                                                  NOC relevant to your job, you
+                                                  may
+                                                  <a href="">check your NOC</a>
+                                                  here.
+                                                </div>
+                                                <select
+                                                  id="q6i"
+                                                  name="q6i"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                  <option value="A">
+                                                    Less than a year
+                                                  </option>
+                                                  <option value="B">
+                                                    One year
+                                                  </option>
+                                                  <option value="C">
+                                                    Two years
+                                                  </option>
+                                                  <option value="D">
+                                                    Three years
+                                                  </option>
+                                                  <option value="E">
+                                                    Four years
+                                                  </option>
+                                                  <option value="F">
+                                                    Five years or more
+                                                  </option>
+                                                </select>
+                                              </div>
+                                              <div
+                                                id="q6ii-foreign"
+                                                style="display: none"
+                                              >
+                                                <label
+                                                  for="q6ii"
+                                                  class="questionCRS"
+                                                  >ii. How many years of Foreign
+                                                  work experience have you
+                                                  accumulated in the past 10
+                                                  years?</label
+                                                >
+                                                <select
+                                                  id="q6ii"
+                                                  name="q6ii"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                  <option value="A">
+                                                    Less than a year
+                                                  </option>
+                                                  <option value="B">
+                                                    One year
+                                                  </option>
+                                                  <option value="C">
+                                                    Two years
+                                                  </option>
+                                                  <option value="D">
+                                                    Three years or more
+                                                  </option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div
+                                              id="q7-certificate"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q7"
+                                                class="questionCRS"
+                                                >6) Have you been awarded a
+                                                certificate of
+                                                qualification?</label
+                                              >
+                                              <div class="prgrph">
+                                                With a certificate of
+                                                qualification, you can work in
+                                                some skilled trades in Canada.
+                                                But these certificates can only
+                                                be issued by a competent
+                                                provincial, territorial, or
+                                                federal authority. You can learn
+                                                more about
+                                                <a href=""
+                                                  >skilled trades and
+                                                  certificates of
+                                                  qualification</a
+                                                >
+                                                here.
+                                              </div>
+                                              <select
+                                                id="q7"
+                                                name="q7"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">No</option>
+                                                <option value="B">Yes</option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q8-offer"
+                                              style="display: none"
+                                            >
+                                              <div class="title">
+                                                <b>7) Job Offer</b>
+                                              </div>
+                                              <label
+                                                for="q8"
+                                                class="questionCRS"
+                                                >i. Are you in possession of a
+                                                valid job offer?</label
+                                              >
+                                              <div class="prgrph">
+                                                To be considered valid, the job
+                                                offer has to be:
+                                              </div>
+                                              <ul>
+                                                <li>
+                                                  continuous (not seasonal),
+                                                  paid, full-time (at least
+                                                  30h/week),
+                                                </li>
+                                                <li>
+                                                  in a job that is NOC Skill
+                                                  Type/Level 0, A or B,
+                                                </li>
+                                                <li>
+                                                  supported by a Labour Market
+                                                  Impact Assessment (LMIA) if
+                                                  not exempt, and
+                                                </li>
+                                                <li>
+                                                  valid for at least one year
+                                                  after Immigration, Refugees,
+                                                  and Citizenship Canada (IRCC)
+                                                  issues your permanent resident
+                                                  visa.
+                                                </li>
+                                              </ul>
+                                              <div class="prgrph">
+                                                You can learn more about the
+                                                <a href="">
+                                                  validity of job offers here</a
+                                                >.
+                                              </div>
+                                              <select
+                                                id="q8"
+                                                name="q8"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">No</option>
+                                                <option value="B">Yes</option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q8-noc"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q8a"
+                                                class="questionCRS"
+                                                >ii. The job offer is under
+                                                which NOC Skill
+                                                Type/Level?</label
+                                              >
+                                              <select
+                                                id="q8a"
+                                                name="q8a"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">
+                                                  NOC Skill Type 00
+                                                </option>
+                                                <option value="B">
+                                                  NOC Skill Type/Level 0, A or B
+                                                </option>
+                                                <option value="C">
+                                                  NOC Skill Level C or D
+                                                </option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q9-nomination"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q9"
+                                                class="questionCRS"
+                                                >8) Have you been awarded a
+                                                provincial or territorial
+                                                certificate of
+                                                nomination?</label
+                                              >
+                                              <select
+                                                id="q9"
+                                                name="q9"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">No</option>
+                                                <option value="B">Yes</option>
+                                              </select>
+                                            </div>
+                                            <div
+                                              id="q10-sibling"
+                                              style="display: none"
+                                            >
+                                              <label
+                                                for="q10i"
+                                                class="questionCRS"
+                                                >9) Do you or your
+                                                spouse/partner (if accompanying)
+                                                have a sister or brother
+                                                (related by blood, marriage,
+                                                common-law partnership or
+                                                adoption), who is at least 18
+                                                years old and a permanent
+                                                resident or Canadian citizen,
+                                                and currently living in
+                                                Canada?</label
+                                              >
+                                              <select
+                                                id="q10i"
+                                                name="q10i"
+                                                class="tool-choose mrgn-bttm-md"
+                                              >
+                                                <option
+                                                  value="default"
+                                                  label="Select..."
+                                                >
+                                                  Select...
+                                                </option>
+                                                <option value="A">No</option>
+                                                <option value="B">Yes</option>
+                                              </select>
+                                            </div>
+                                            <div id="spouse_questions">
+                                              <div
+                                                id="q10-s-education"
+                                                style="display: none"
+                                              >
+                                                <div class="title">
+                                                  <b
+                                                    >10) Spouse/Partner
+                                                    factors</b
+                                                  >
+                                                </div>
+                                                <label
+                                                  for="q10"
+                                                  class="questionCRS"
+                                                  >i. What is the highest
+                                                  educational level of your
+                                                  spouse/partner?</label
+                                                >
+                                                <div class="prgrph">
+                                                  If the spouse/partner did not
+                                                  study in Canada, then they
+                                                  also need an ECA.
+                                                </div>
+                                                <select
+                                                  id="q10"
+                                                  name="q10"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                  <option value="A">
+                                                    Less than secondary (high)
+                                                    school
+                                                  </option>
+                                                  <option value="B">
+                                                    Secondary (high) school
+                                                    diploma
+                                                  </option>
+                                                  <option value="C">
+                                                    One-year post-secondary
+                                                    credential
+                                                  </option>
+                                                  <option value="D">
+                                                    Two-year post-secondary
+                                                    credential
+                                                  </option>
+                                                  <option value="E">
+                                                    Three-year or more
+                                                    post-secondary credential
+                                                  </option>
+                                                  <option value="F">
+                                                    Two or more credentials,
+                                                    with a least one for a
+                                                    program of three years or
+                                                    more
+                                                  </option>
+                                                  <option value="G">
+                                                    Master's degree, OR
+                                                    Professional degree
+                                                  </option>
+                                                  <option value="H">
+                                                    Doctoral (PhD) degree
+                                                  </option>
+                                                </select>
+                                              </div>
+                                              <div
+                                                id="q11-s-work-xp"
+                                                style="display: none"
+                                              >
+                                                <label
+                                                  for="q11"
+                                                  class="questionCRS"
+                                                  >ii. How many years of
+                                                  Canadian work experience has
+                                                  your spouse/partner
+                                                  accumulated in the past 10
+                                                  years?</label
+                                                >
+                                                <div class="prgrph">
+                                                  Same requirements as for your
+                                                  work experience.
+                                                </div>
+                                                <select
+                                                  id="q11"
+                                                  name="q11"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                  <option value="A">
+                                                    Less than a year
+                                                  </option>
+                                                  <option value="B">
+                                                    One year
+                                                  </option>
+                                                  <option value="C">
+                                                    Two years
+                                                  </option>
+                                                  <option value="D">
+                                                    Three years
+                                                  </option>
+                                                  <option value="E">
+                                                    Four years
+                                                  </option>
+                                                  <option value="F">
+                                                    Five years or more
+                                                  </option>
+                                                </select>
+                                              </div>
+                                              <div
+                                                id="q12-s-fol"
+                                                style="display: none"
+                                              >
+                                                <label
+                                                  for="q12i"
+                                                  class="questionCRS"
+                                                  >iii. Did your spouse/partner
+                                                  take a language test?</label
+                                                >
+                                                <div class="prgrph">
+                                                  If the answer is yes, select
+                                                  which test in the list below
+                                                  (results must also be less
+                                                  than 2 years old); and if no,
+                                                  select N/A.
+                                                </div>
+                                                <select
+                                                  id="q12i"
+                                                  name="q12i"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                  <option value="A">
+                                                    CELPIP
+                                                  </option>
+                                                  <option value="B">
+                                                    IELTS
+                                                  </option>
+                                                  <option value="C">
+                                                    TEF Canada
+                                                  </option>
+                                                  <option value="D">
+                                                    TCF Canada
+                                                  </option>
+                                                  <option value="E">N/A</option>
+                                                </select>
+                                              </div>
+                                              <div
+                                                id="q12ii-s-fol"
+                                                style="display: none"
+                                              >
+                                                <div class="questionCRS2">
+                                                  <b
+                                                    >iv. What are your
+                                                    spouse/partner language test
+                                                    results?</b
+                                                  >
+                                                </div>
+                                                <div class="prgrph">
+                                                  Fill in your spouse/partner’s
+                                                  test results:
+                                                </div>
+                                                <label
+                                                  for="q12ii-fol-speaking"
+                                                  class="questionCRS"
+                                                  >Speaking:</label
+                                                >
+                                                <select
+                                                  id="q12ii-fol-speaking"
+                                                  name="q12ii-fol-speaking"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q12ii-fol-listening"
+                                                  class="questionCRS"
+                                                  >Listening:</label
+                                                >
+                                                <select
+                                                  id="q12ii-fol-listening"
+                                                  name="q12ii-fol-listening"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q12ii-fol-reading"
+                                                  class="questionCRS"
+                                                  >Reading:</label
+                                                >
+                                                <select
+                                                  id="q12ii-fol-reading"
+                                                  name="q12ii-fol-reading"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                                <label
+                                                  for="q12ii-fol-writing"
+                                                  class="questionCRS"
+                                                  >Writing:</label
+                                                >
+                                                <select
+                                                  id="q12ii-fol-writing"
+                                                  name="q12ii-fol-writing"
+                                                  class="
+                                                    tool-choose
+                                                    mrgn-bttm-md
+                                                  "
+                                                >
+                                                  <option
+                                                    value="default"
+                                                    label="Select..."
+                                                  >
+                                                    Select...
+                                                  </option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <button
+                                              id="submit"
+                                              type="submit"
+                                              class="
+                                                btn
+                                                button-dflt
+                                                mrgn-tp-md mrgn-bttm-md
+                                                disabled
+                                              "
+                                            >
+                                              Calculate your score
+                                            </button>
+                                          </form>
+                                        </div>
+                                        <div id="no-outcome"></div>
+                                        <div id="outcome" style="display: none">
+                                          <div class="alert rect-final">
+                                            <div class="final2">
+                                              Your CRS Total Points:
+                                            </div>
+                                            <div id="grand_total"></div>
+                                            <div class="prgrph">
+                                              The following results are only
+                                              based on your answers. Make sure
+                                              you have read all the requirements
+                                              for each question, and that you
+                                              answered correctly.
+                                            </div>
+                                            <div class="prgrph">
+                                              IRCC conducts periodicrounds of
+                                              invitations or “draws”
+                                              (approximately every two weeks)
+                                              with a minimum CRS score for each
+                                              draw. You need your CRS score to
+                                              be equal or higher than that of
+                                              the draw to be invited to apply.
+                                            </div>
+                                            <div id="cre_hmn_f"></div>
+                                            <div id="spse_prtr_f"></div>
+                                            <div id="skl_f"></div>
+                                            <div id="bns_f"></div>
+                                            <div id="total_t"></div>
+                                          </div>
+                                        </div>
+                                        <div id="test"></div>
+                                      </section>
+
+                                      <script src="https://www.justforcanada.com/editor/uploads/2/9/2/7/29276027/custom_themes/553441060475279383/files/crs_calculator_6.js"></script>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="clear: both"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end footer-wrap -->
+    </div>
+    <!-- /.wrapper -->
+  </body>
+</html>
